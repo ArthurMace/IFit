@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IFit - Criar Conta</title>
+    <title>IFit - Login</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
         
@@ -58,14 +58,14 @@
         .button:hover {
             background: #006600;
         }
-        .login-link {
+        .register-link {
             margin-top: 10px;
             display: block;
             color: #008000;
             text-decoration: none;
             font-size: 14px;
         }
-        .login-link:hover {
+        .register-link:hover {
             text-decoration: underline;
         }
     </style>
@@ -73,15 +73,13 @@
 <body>
     <div class="container">
         <img src="logo_ifit.png" alt="Logo IFit" class="logo">
-        <h2>Crie sua conta</h2>
+        <h2>Bem-vindo ao IFit</h2>
         <form>
-            <input type="text" class="input-field" placeholder="Nome Completo" required>
-            <input type="email" class="input-field" placeholder="Email" required>
+            <input type="text" class="input-field" placeholder="Usuário ou Email" required>
             <input type="password" class="input-field" placeholder="Senha" required>
-            <input type="password" class="input-field" placeholder="Confirme sua senha" required>
-            <button type="submit" class="button">Criar Conta</button>
+            <button type="submit" class="button">Entrar</button>
         </form>
-        <a href="index.html" class="login-link">Já tem uma conta? Faça login</a>
+        <a href="criar_conta.html" class="register-link">Criar uma conta</a>
     </div>
 </body>
 </html>
