@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IFit</title>
+    <title>IFit - Login</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
         
@@ -19,75 +19,67 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-        }
-        .header {
-            width: 100%;
-            background-color: #008000;
-            padding: 20px;
-            text-align: center;
-        }
-        .header img {
-            max-width: 200px;
+            justify-content: center;
+            height: 100vh;
         }
         .container {
-            width: 90%;
-            max-width: 900px;
             background: #FEFEE3;
             color: #000814;
             padding: 30px;
-            margin-top: 20px;
             border-radius: 10px;
             text-align: center;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 400px;
+        }
+        .logo {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #000814;
+            border-radius: 5px;
+            font-size: 16px;
         }
         .button {
             background: #008000;
             color: #FEFEE3;
             border: none;
-            padding: 12px 25px;
+            padding: 12px 20px;
             font-size: 18px;
             cursor: pointer;
-            margin: 10px;
             border-radius: 5px;
             transition: 0.3s;
+            width: 100%;
         }
         .button:hover {
             background: #006600;
         }
-        .features {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin-top: 20px;
+        .register-link {
+            margin-top: 10px;
+            display: block;
+            color: #008000;
+            text-decoration: none;
+            font-size: 14px;
         }
-        .feature {
-            background: #008000;
-            color: #FEFEE3;
-            padding: 20px;
-            border-radius: 10px;
-            width: 250px;
-            text-align: center;
-            margin: 10px;
-            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+        .register-link:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <img src="logo_ifit.png" alt="Logo IFit">
-    </div>
     <div class="container">
-        <h2>Bem-vindo ao IFit!</h2>
-        <p>Conecte-se com pessoas que cuidam da saúde e do corpo.</p>
-        <button class="button">Criar Conta</button>
-        <button class="button">Entrar</button>
-    </div>
-    
-    <div class="features">
-        <div class="feature">📸 Compartilhe seus treinos</div>
-        <div class="feature">🎵 Adicione suas playlists</div>
-        <div class="feature">🏃 Registre sua evolução</div>
-        <div class="feature">💪 Monte seus treinos</div>
+        <img src="logo_ifit.png" alt="Logo IFit" class="logo">
+        <h2>Bem-vindo ao IFit</h2>
+        <form>
+            <input type="text" class="input-field" placeholder="Usuário ou Email" required>
+            <input type="password" class="input-field" placeholder="Senha" required>
+            <button type="submit" class="button">Entrar</button>
+        </form>
+        <a href="#" class="register-link">Criar uma conta</a>
     </div>
 </body>
 </html>
